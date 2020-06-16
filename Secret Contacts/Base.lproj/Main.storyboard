@@ -41,6 +41,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellLabel" destination="vhc-h4-dM1" id="G2S-oJ-JvH"/>
+                                    <segue destination="7WN-Zc-NlB" kind="show" identifier="edit" id="Yfd-E1-7KN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,7 +75,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hpW-FM-G4j"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -91,7 +92,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="HrP-bi-bxB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -171,4 +172,7 @@
             <point key="canvasLocation" x="566.66666666666674" y="41.517857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yfd-E1-7KN"/>
+    </inferredMetricsTieBreakers>
 </document>
