@@ -28,7 +28,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="38" id="9fG-Zt-Q8n"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="1308.6956521739132" y="41.517857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="BXs-Qn-pBS">
             <objects>
-                <viewController id="7WN-Zc-NlB" sceneMemberID="viewController">
+                <viewController id="7WN-Zc-NlB" customClass="AddViewController" customModule="Secret_Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zho-WA-qsG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAv-GQ-FOB">
                                 <rect key="frame" x="20" y="58" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="7WN-Zc-NlB" eventType="editingDidEndOnExit" id="DhB-Ij-dAg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8K-rk-cyE">
                                 <rect key="frame" x="20" y="120" width="374" height="30"/>
@@ -95,7 +98,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMH-zx-A9F">
                                 <rect key="frame" x="20" y="158" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="7WN-Zc-NlB" eventType="editingDidEndOnExit" id="eyE-Xg-z5p"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ire-lZ-7ww">
                                 <rect key="frame" x="20" y="694" width="374" height="40"/>
@@ -103,9 +109,12 @@
                                     <constraint firstAttribute="height" constant="40" id="jI6-aA-nxS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Save">
                                     <color key="titleColor" red="0.57380741830000004" green="0.29617080779999999" blue="0.31261216120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="save:" destination="7WN-Zc-NlB" eventType="touchUpInside" id="4j1-wH-4zZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -129,6 +138,10 @@
                         <viewLayoutGuide key="safeArea" id="raF-UL-3Jc"/>
                     </view>
                     <navigationItem key="navigationItem" id="dfR-cq-St7"/>
+                    <connections>
+                        <outlet property="nameField" destination="yAv-GQ-FOB" id="Qn4-6h-KJa"/>
+                        <outlet property="numberField" destination="oMH-zx-A9F" id="Qws-Np-xaO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCj-zp-g8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

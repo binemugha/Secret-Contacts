@@ -118,13 +118,13 @@
 				18FF190124989BFF00F32BF9 /* AppDelegate.swift */,
 				18FF190324989BFF00F32BF9 /* SceneDelegate.swift */,
 				18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */,
+				18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */,
+				18FF193F2498CCF000F32BF9 /* AddViewController.swift */,
 				18FF190724989BFF00F32BF9 /* Main.storyboard */,
 				18FF190D24989C0300F32BF9 /* Assets.xcassets */,
 				18FF190F24989C0300F32BF9 /* LaunchScreen.storyboard */,
 				18FF191224989C0300F32BF9 /* Info.plist */,
 				18FF190A24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld */,
-				18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */,
-				18FF193F2498CCF000F32BF9 /* AddViewController.swift */,
 			);
 			path = "Secret Contacts";
 			sourceTree = "<group>";

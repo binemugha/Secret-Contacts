@@ -64,6 +64,10 @@ class ContactTableViewController: UITableViewController,  NSFetchedResultsContro
         return cell
     }
     
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
