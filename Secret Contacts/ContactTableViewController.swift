@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class ContactTableViewController: UITableViewController {
+class ContactTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

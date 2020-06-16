@@ -17,6 +17,9 @@
 		18FF192724989C0300F32BF9 /* Secret_ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF192624989C0300F32BF9 /* Secret_ContactsUITests.swift */; };
 		18FF19352498AA9600F32BF9 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */; };
 		18FF19372498AAEB00F32BF9 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */; };
+		18FF193A2498B01B00F32BF9 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19382498B01B00F32BF9 /* Entity+CoreDataClass.swift */; };
+		18FF193B2498B01B00F32BF9 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */; };
+		18FF193E2498B1A800F32BF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF193D2498B1A800F32BF9 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		18FF192824989C0300F32BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		18FF19382498B01B00F32BF9 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18FF193D2498B1A800F32BF9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF193E2498B1A800F32BF9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +90,13 @@
 		18FF18F524989BFF00F32BF9 = {
 			isa = PBXGroup;
 			children = (
+				18FF19382498B01B00F32BF9 /* Entity+CoreDataClass.swift */,
+				18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */,
 				18FF190024989BFF00F32BF9 /* Secret Contacts */,
 				18FF191A24989C0300F32BF9 /* Secret ContactsTests */,
 				18FF192524989C0300F32BF9 /* Secret ContactsUITests */,
 				18FF18FF24989BFF00F32BF9 /* Products */,
+				18FF193C2498B1A800F32BF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +142,14 @@
 				18FF192824989C0300F32BF9 /* Info.plist */,
 			);
 			path = "Secret ContactsUITests";
+			sourceTree = "<group>";
+		};
+		18FF193C2498B1A800F32BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18FF193D2498B1A800F32BF9 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +285,8 @@
 			files = (
 				18FF190C24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld in Sources */,
 				18FF19372498AAEB00F32BF9 /* ContactTableViewCell.swift in Sources */,
+				18FF193A2498B01B00F32BF9 /* Entity+CoreDataClass.swift in Sources */,
+				18FF193B2498B01B00F32BF9 /* Entity+CoreDataProperties.swift in Sources */,
 				18FF19352498AA9600F32BF9 /* ContactTableViewController.swift in Sources */,
 				18FF190224989BFF00F32BF9 /* AppDelegate.swift in Sources */,
 				18FF190424989BFF00F32BF9 /* SceneDelegate.swift in Sources */,

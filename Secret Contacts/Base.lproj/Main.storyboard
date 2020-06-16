@@ -9,13 +9,13 @@
         <!--Secret Contacts-->
         <scene sceneID="92T-fF-co2">
             <objects>
-                <tableViewController id="ciA-n7-RGQ" sceneMemberID="viewController">
+                <tableViewController id="ciA-n7-RGQ" customClass="ContactTableViewController" customModule="Secret_Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aZj-fW-3ZD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="Cgg-0O-i3c">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="Cgg-0O-i3c" customClass="ContactTableViewCell" customModule="Secret_Contacts" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cgg-0O-i3c" id="EGC-lv-3MQ">
@@ -38,6 +38,9 @@
                                         <constraint firstItem="vhc-h4-dM1" firstAttribute="trailing" secondItem="EGC-lv-3MQ" secondAttribute="trailingMargin" id="bLW-fk-qCX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellLabel" destination="vhc-h4-dM1" id="G2S-oJ-JvH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
