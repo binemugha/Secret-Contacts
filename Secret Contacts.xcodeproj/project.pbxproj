@@ -20,6 +20,7 @@
 		18FF193A2498B01B00F32BF9 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19382498B01B00F32BF9 /* Entity+CoreDataClass.swift */; };
 		18FF193B2498B01B00F32BF9 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */; };
 		18FF193E2498B1A800F32BF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF193D2498B1A800F32BF9 /* CoreData.framework */; };
+		18FF19402498CCF000F32BF9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF193F2498CCF000F32BF9 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		18FF19382498B01B00F32BF9 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		18FF193D2498B1A800F32BF9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18FF193F2498CCF000F32BF9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				18FF191224989C0300F32BF9 /* Info.plist */,
 				18FF190A24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld */,
 				18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */,
+				18FF193F2498CCF000F32BF9 /* AddViewController.swift */,
 			);
 			path = "Secret Contacts";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				18FF190C24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld in Sources */,
 				18FF19372498AAEB00F32BF9 /* ContactTableViewCell.swift in Sources */,
+				18FF19402498CCF000F32BF9 /* AddViewController.swift in Sources */,
 				18FF193A2498B01B00F32BF9 /* Entity+CoreDataClass.swift in Sources */,
 				18FF193B2498B01B00F32BF9 /* Entity+CoreDataProperties.swift in Sources */,
 				18FF19352498AA9600F32BF9 /* ContactTableViewController.swift in Sources */,
