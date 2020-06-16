@@ -9,39 +9,61 @@
 import UIKit
 import CoreData
 
-class ContactTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class ContactTableViewController: UITableViewController,  NSFetchedResultsControllerDelegate {
+    
+    var pc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var frc : NSFetchedResultsController = NSFetchedResultsController<NSFetchRequestResult>()
+    
+    func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Entity")
+        let sorter = NSSortDescriptor(key: "contactname", ascending: true)
+        fetchRequest.sortDescriptors = [sorter]
+        return fetchRequest
+    }
+    
+    func getFRC() -> NSFetchedResultsController<NSFetchRequestResult> {
+        frc = NSFetchedResultsController(fetchRequest: fetchRequest(), managedObjectContext: pc, sectionNameKeyPath: nil, cacheName: nil)
+        return frc
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        frc = getFRC()
+        frc.delegate = self
+        
+        do{
+            try frc.performFetch()
+        }
+        catch{
+            print(error)
+            return
+        }
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        let numberOfSections = frc.sections?.count
+        return numberOfSections!
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        let numberOfCells = frc.sections?[section].numberOfObjects
+        return numberOfCells!
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ContactTableViewCell
 
         // Configure the cell...
+        let item = frc.object(at: indexPath) as! Entity
+        cell.cellLabel.text = item.contactname
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
