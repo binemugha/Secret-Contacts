@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		18FF190224989BFF00F32BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF190124989BFF00F32BF9 /* AppDelegate.swift */; };
 		18FF190424989BFF00F32BF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF190324989BFF00F32BF9 /* SceneDelegate.swift */; };
-		18FF190624989BFF00F32BF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF190524989BFF00F32BF9 /* ViewController.swift */; };
 		18FF190924989BFF00F32BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF190724989BFF00F32BF9 /* Main.storyboard */; };
 		18FF190C24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18FF190A24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld */; };
 		18FF190E24989C0300F32BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FF190D24989C0300F32BF9 /* Assets.xcassets */; };
 		18FF191124989C0300F32BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF190F24989C0300F32BF9 /* LaunchScreen.storyboard */; };
 		18FF191C24989C0300F32BF9 /* Secret_ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF191B24989C0300F32BF9 /* Secret_ContactsTests.swift */; };
 		18FF192724989C0300F32BF9 /* Secret_ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF192624989C0300F32BF9 /* Secret_ContactsUITests.swift */; };
+		18FF19352498AA9600F32BF9 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */; };
+		18FF19372498AAEB00F32BF9 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		18FF18FE24989BFF00F32BF9 /* Secret Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF190124989BFF00F32BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FF190324989BFF00F32BF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18FF190524989BFF00F32BF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FF190824989BFF00F32BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FF190B24989BFF00F32BF9 /* Secret_Contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Secret_Contacts.xcdatamodel; sourceTree = "<group>"; };
 		18FF190D24989C0300F32BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		18FF192224989C0300F32BF9 /* Secret ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secret ContactsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF192624989C0300F32BF9 /* Secret_ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_ContactsUITests.swift; sourceTree = "<group>"; };
 		18FF192824989C0300F32BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,13 @@
 			children = (
 				18FF190124989BFF00F32BF9 /* AppDelegate.swift */,
 				18FF190324989BFF00F32BF9 /* SceneDelegate.swift */,
-				18FF190524989BFF00F32BF9 /* ViewController.swift */,
+				18FF19342498AA9600F32BF9 /* ContactTableViewController.swift */,
 				18FF190724989BFF00F32BF9 /* Main.storyboard */,
 				18FF190D24989C0300F32BF9 /* Assets.xcassets */,
 				18FF190F24989C0300F32BF9 /* LaunchScreen.storyboard */,
 				18FF191224989C0300F32BF9 /* Info.plist */,
 				18FF190A24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld */,
+				18FF19362498AAEB00F32BF9 /* ContactTableViewCell.swift */,
 			);
 			path = "Secret Contacts";
 			sourceTree = "<group>";
@@ -263,7 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FF190C24989BFF00F32BF9 /* Secret_Contacts.xcdatamodeld in Sources */,
-				18FF190624989BFF00F32BF9 /* ViewController.swift in Sources */,
+				18FF19372498AAEB00F32BF9 /* ContactTableViewCell.swift in Sources */,
+				18FF19352498AA9600F32BF9 /* ContactTableViewController.swift in Sources */,
 				18FF190224989BFF00F32BF9 /* AppDelegate.swift in Sources */,
 				18FF190424989BFF00F32BF9 /* SceneDelegate.swift in Sources */,
 			);
