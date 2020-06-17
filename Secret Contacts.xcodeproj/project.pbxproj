@@ -21,6 +21,7 @@
 		18FF193B2498B01B00F32BF9 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */; };
 		18FF193E2498B1A800F32BF9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF193D2498B1A800F32BF9 /* CoreData.framework */; };
 		18FF19402498CCF000F32BF9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF193F2498CCF000F32BF9 /* AddViewController.swift */; };
+		18FF1942249AAD6800F32BF9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FF1941249AAD6800F32BF9 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		18FF19392498B01B00F32BF9 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		18FF193D2498B1A800F32BF9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		18FF193F2498CCF000F32BF9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		18FF1941249AAD6800F32BF9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF1942249AAD6800F32BF9 /* MessageUI.framework in Frameworks */,
 				18FF193E2498B1A800F32BF9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +153,7 @@
 		18FF193C2498B1A800F32BF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18FF1941249AAD6800F32BF9 /* MessageUI.framework */,
 				18FF193D2498B1A800F32BF9 /* CoreData.framework */,
 			);
 			name = Frameworks;

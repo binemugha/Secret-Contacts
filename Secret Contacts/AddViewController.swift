@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
+import MessageUI
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var numberField: UITextField!
@@ -58,4 +59,28 @@ class AddViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    
+    
+    @IBAction func messageButton(_ sender: Any) {
+        if MFMessageComposeViewController.canSendText(){
+            let messageSheet = MFMessageComposeViewController()
+            
+            messageSheet.recipients = ["\(numberField.text!)"]
+            messageSheet.body = " "
+            messageSheet.messageComposeDelegate = self
+            self.present(messageSheet, animated: true, completion: nil)
+        }else{
+            let alert = UIAlertController(title: "Warning", message: "Your device can't send message", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        self.dismiss(animated: true, completion: nil)
+    }
+     
+    
+    @IBAction func callButton(_ sender: Any) {
+        
+    }
 }

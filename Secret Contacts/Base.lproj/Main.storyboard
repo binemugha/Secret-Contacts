@@ -106,7 +106,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ire-lZ-7ww">
-                                <rect key="frame" x="20" y="645" width="374" height="40"/>
+                                <rect key="frame" x="20" y="239" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jI6-aA-nxS"/>
                                 </constraints>
@@ -118,21 +118,53 @@
                                     <action selector="save:" destination="7WN-Zc-NlB" eventType="touchUpInside" id="4j1-wH-4zZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoJ-Wr-9ba">
+                                <rect key="frame" x="20" y="646" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cma-IJ-Rgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" red="0.57380741830000004" green="0.29617080779999999" blue="0.31261216120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButton:" destination="7WN-Zc-NlB" eventType="touchUpInside" id="aCO-1o-WQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7U-LW-RL5">
+                                <rect key="frame" x="20" y="580" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PQ6-6P-fQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.57380741830000004" green="0.29617080779999999" blue="0.31261216120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="messageButton:" destination="7WN-Zc-NlB" eventType="touchUpInside" id="EEv-n2-qeh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="m7U-LW-RL5" secondAttribute="trailing" constant="20" id="1hB-XA-06c"/>
                             <constraint firstItem="fms-nY-2TQ" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="2dx-J9-h7D"/>
                             <constraint firstItem="ire-lZ-7ww" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="COr-6A-FfQ"/>
+                            <constraint firstItem="raF-UL-3Jc" firstAttribute="bottom" secondItem="KoJ-Wr-9ba" secondAttribute="bottom" constant="39" id="Cnm-nz-SZm"/>
+                            <constraint firstItem="KoJ-Wr-9ba" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="JTY-xg-LxF"/>
                             <constraint firstItem="h8K-rk-cyE" firstAttribute="top" secondItem="yAv-GQ-FOB" secondAttribute="bottom" constant="28" id="Mmf-ls-gNI"/>
                             <constraint firstItem="yAv-GQ-FOB" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="Nn4-5h-Nfv"/>
                             <constraint firstItem="yAv-GQ-FOB" firstAttribute="top" secondItem="fms-nY-2TQ" secondAttribute="bottom" constant="8" id="RZH-bT-67r"/>
-                            <constraint firstItem="raF-UL-3Jc" firstAttribute="bottom" secondItem="ire-lZ-7ww" secondAttribute="bottom" constant="40" id="Th0-Py-gca"/>
+                            <constraint firstItem="raF-UL-3Jc" firstAttribute="bottom" secondItem="ire-lZ-7ww" secondAttribute="bottom" constant="446" id="Th0-Py-gca"/>
                             <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="oMH-zx-A9F" secondAttribute="trailing" constant="20" id="WIb-Tf-oEs"/>
                             <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="h8K-rk-cyE" secondAttribute="trailing" constant="20" id="bEP-XC-bgY"/>
+                            <constraint firstItem="m7U-LW-RL5" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="fcL-HS-Glj"/>
                             <constraint firstItem="h8K-rk-cyE" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="gN0-ZS-U6t"/>
+                            <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="KoJ-Wr-9ba" secondAttribute="trailing" constant="20" id="gQ5-zx-1Uw"/>
                             <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="ire-lZ-7ww" secondAttribute="trailing" constant="20" id="j7V-vg-kGs"/>
                             <constraint firstItem="fms-nY-2TQ" firstAttribute="top" secondItem="raF-UL-3Jc" secondAttribute="top" constant="20" id="pre-NG-0If"/>
                             <constraint firstItem="oMH-zx-A9F" firstAttribute="top" secondItem="h8K-rk-cyE" secondAttribute="bottom" constant="8" id="qA5-dx-VaA"/>
+                            <constraint firstItem="KoJ-Wr-9ba" firstAttribute="top" secondItem="m7U-LW-RL5" secondAttribute="bottom" constant="26" id="qBQ-9G-Elf"/>
                             <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="fms-nY-2TQ" secondAttribute="trailing" constant="20" id="qag-NS-Iy8"/>
                             <constraint firstItem="raF-UL-3Jc" firstAttribute="trailing" secondItem="yAv-GQ-FOB" secondAttribute="trailing" constant="20" id="tZ3-nc-jj5"/>
                             <constraint firstItem="oMH-zx-A9F" firstAttribute="leading" secondItem="raF-UL-3Jc" secondAttribute="leading" constant="20" id="viJ-2t-hln"/>
