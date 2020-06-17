@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pXg-IH-Zju">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -51,6 +51,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Secret Contacts" id="6Cb-hY-oyA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jZj-dw-mP1"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BsI-IO-Ll3">
                             <connections>
                                 <segue destination="7WN-Zc-NlB" kind="show" id="TyW-pe-Mmd"/>
@@ -82,7 +83,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAv-GQ-FOB">
                                 <rect key="frame" x="20" y="58" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboard:" destination="7WN-Zc-NlB" eventType="editingDidEndOnExit" id="DhB-Ij-dAg"/>
                                 </connections>
@@ -99,13 +100,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMH-zx-A9F">
                                 <rect key="frame" x="20" y="158" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboard:" destination="7WN-Zc-NlB" eventType="editingDidEndOnExit" id="eyE-Xg-z5p"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ire-lZ-7ww">
-                                <rect key="frame" x="20" y="694" width="374" height="40"/>
+                                <rect key="frame" x="20" y="645" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jI6-aA-nxS"/>
                                 </constraints>
@@ -151,7 +152,7 @@
         <!--Navigation Controller-->
         <scene sceneID="9Ny-2e-skb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXg-IH-Zju" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="pXg-IH-Zju" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wfm-lG-Gph">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
