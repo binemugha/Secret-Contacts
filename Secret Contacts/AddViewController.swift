@@ -81,6 +81,7 @@ class AddViewController: UIViewController, MFMessageComposeViewControllerDelegat
      
     
     @IBAction func callButton(_ sender: Any) {
+        UIApplication.shared.open(NSURL(string: "tel://\(numberField.text!)")! as URL, options: [:], completionHandler: nil)
         
     }
 }
